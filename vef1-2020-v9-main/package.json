@@ -1,0 +1,30 @@
+{
+  "name": "vef1-2020-v9-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "dev": "npm-run-all --parallel browser-sync",
+    "lint": "stylelint styles.scss --syntax scss",
+    "babel": "babel src --out-dir dist",
+    "rollup": "rollup -c"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "eslint": "^7.13.0",
+    "leaflet": "^1.7.1",
+    "lynx": "^0.2.0",
+    "request": "^2.88.2",
+    "rollup": "^2.33.1",
+    "sass": "^1.29.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "browser-sync": "^2.26.13"
+  }
+}
