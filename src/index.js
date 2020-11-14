@@ -37,4 +37,5 @@ document.addEventListener('DOMContentLoaded', async () => {
   markerPoint(earth);
   console.log(earth);
   init(map_container);
+  document.querySelector('.loading').remove();
 });
