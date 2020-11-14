@@ -69,5 +69,23 @@ export function el(name, ...children) {
  * @returns {string} Formatted string.
  */
 export function formatDate(timestamp) {
+  
+
   // TODO Útfæra með „vanilla JS“ eða nota date-fns pakka
+  const date = new Date();
+
+  // "6/1/2019, 8:00:00 AM"
+  date.toLocaleString('en-US');
+
+  // "6/1/2019" with no time portion
+  date.toLocaleDateString();
+
+  // But you can still include `hours` and `minutes` using options
+  // with `toLocaleDateString()`.
+  date.toLocaleDateString('en-US', {
+    month: 'long',
+    day: '2-digit',
+    year: 'numeric',
+    hour: '2-digit'
+  });
 }
